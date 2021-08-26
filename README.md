@@ -78,46 +78,38 @@ I expect to deliver the following:
 
 Plan -> **Acquire** -> Prepare -> Explore -> Model & Evaluate -> Deliver
 
-Make anacquire.py module that:
+Make an acquire.py module that:
 
-Store functions that are needed to acquire data from the customers table from the telco_churn database on the Codeup data science database server; make sure my module contains the necessary imports to run my code. 
+Stores functions that are needed to acquire data from the customers table from the telco_churn database on the Codeup data science database server; make sure my module contains the necessary imports to run my code. 
 
 My final function will return a pandas DataFrame.
 
 
 
 ## Data dictionary
-Target  | Description   | Data Type
---|--|--
-churn   | indicates whether or not a customer churned | int64
-
-
-
-Categorical Features   | Description |	Data Type
---|--|--
-senior_citizen|	indicates if the customer is a senior citizen	|int64
-dependents|	    indicates if the customer has dependents	|int64
-phone_service|	indicates if the customer has phone service with Telco	| int64
-multiple_lines |	indicates if the customer with phone service has multiple lines	| int64
-online_security|	indicates if the customer has online security services |	int 64
-online_backup|	indicates if the customer has online backup services |	int64
-device_protection	| indicates if the customer has device protection services |	int64
-tech_support |  indicates if the customer has tech support services |	int64
-streaming_tv |	indicates if the customer has tv streaming services |	int64
-streaming_movies |	indicates if the customer has movie streaming services |	int64
-payment_type    | indicates the type of payment method a customer is using | int64
-internet_service_type |	indicates which internet service (if any) the customer has |	int64
-gender	|   indicates the the customers' gender identity |	uint8
-contract_type | 	indicates the type of contract the customer has with Telco |	int64
-auto_bill_pay |	indicates if the customer is enrolled in auto bill pay or not |	int64
-
-Continuous Features | Description | Data Type
---|--|--
-monthly_charges | how much a customer pays per month in dollars| float64
-total_charges   | how much a customer has paid over the course of their tenure | float64
-tenure          | how many months the customer has been with the company| int64
-
-Other   | Description   | Data Type
---|--|--
-customer_id | customer id number                       | object
-
+| Feature                  | Datatype               | Definition   |
+|:-------------------------|:-----------------------|:-------------|
+| payment_type_id          | 7043 non-null: int64   | Indication of how customer paid their bill 1 = Electronic check, 2 = Mailed check, 3 = Bank transfer (automatic), 4 =Credit card (automatic)         |
+| contract_type_id         | 7043 non-null: int64   |              |
+| internet_service_type_id | 7043 non-null: int64   |              |
+| customer_id              | 7043 non-null: object  |              |
+| gender                   | 7043 non-null: object  |              |
+| senior_citizen           | 7043 non-null: int64   |              |
+| partner                  | 7043 non-null: object  |              |
+| dependents               | 7043 non-null: object  |              |
+| tenure                   | 7043 non-null: int64   |              |
+| phone_service            | 7043 non-null: object  |              |
+| multiple_lines           | 7043 non-null: object  |              |
+| online_security          | 7043 non-null: object  |              |
+| online_backup            | 7043 non-null: object  |              |
+| device_protection        | 7043 non-null: object  |              |
+| tech_support             | 7043 non-null: object  |              |
+| streaming_tv             | 7043 non-null: object  |              |
+| streaming_movies         | 7043 non-null: object  |              |
+| paperless_billing        | 7043 non-null: object  |              |
+| monthly_charges          | 7043 non-null: float64 |              |
+| total_charges            | 7043 non-null: object  |              |
+| churn                    | 7043 non-null: object  |              |
+| internet_service_type    | 7043 non-null: object  |              |
+| contract_type            | 7043 non-null: object  |              |
+| payment_type             | 7043 non-null: object  |              |
