@@ -44,7 +44,7 @@ def clean_telco_df(df):
                                    'paperless_billing_Yes': 'has_paperless_billing',
                                    'churn_Yes': 'has_churned'})
     # Drop all columns that i just made an encoding for, also dropped duplicate columns 
-    # payment_type_id, contract_type_id,internet_service_type_id. Dropped customer_id as it holds no value
+    # payment_type_id, contract_type_id,internet_service_type_id. 
     df = df.drop(columns =['gender',
                        'partner',
                        'dependents',
@@ -58,7 +58,6 @@ def clean_telco_df(df):
                        'streaming_movies',
                        'paperless_billing',
                        'churn',
-                       'customer_id',
                        'payment_type_id',
                        'contract_type_id', 
                        'internet_service_type_id'])
