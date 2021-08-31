@@ -89,27 +89,27 @@ My final function will return a pandas DataFrame.
 ## Data dictionary
 | Feature                  | Datatype               | Definition   |
 |:-------------------------|:-----------------------|:-------------|
-| payment_type_id          | 7043 non-null: int64   | Indication of how customer paid their bill 1 = Electronic check, 2 = Mailed check, 3 = Bank transfer (automatic), 4 =Credit card (automatic)         |
-| contract_type_id         | 7043 non-null: int64   |              |
-| internet_service_type_id | 7043 non-null: int64   |              |
-| customer_id              | 7043 non-null: object  |              |
-| gender                   | 7043 non-null: object  |              |
-| senior_citizen           | 7043 non-null: int64   |              |
-| partner                  | 7043 non-null: object  |              |
-| dependents               | 7043 non-null: object  |              |
-| tenure                   | 7043 non-null: int64   |              |
-| phone_service            | 7043 non-null: object  |              |
-| multiple_lines           | 7043 non-null: object  |              |
-| online_security          | 7043 non-null: object  |              |
-| online_backup            | 7043 non-null: object  |              |
-| device_protection        | 7043 non-null: object  |              |
-| tech_support             | 7043 non-null: object  |              |
-| streaming_tv             | 7043 non-null: object  |              |
-| streaming_movies         | 7043 non-null: object  |              |
-| paperless_billing        | 7043 non-null: object  |              |
-| monthly_charges          | 7043 non-null: float64 |              |
-| total_charges            | 7043 non-null: object  |              |
-| churn                    | 7043 non-null: object  |              |
-| internet_service_type    | 7043 non-null: object  |              |
-| contract_type            | 7043 non-null: object  |              |
-| payment_type             | 7043 non-null: object  |              |
+| payment_type_id          | 7043 non-null: int64   | Indication of how customer paid their bill: 1 = Electronic check, 2 = Mailed check, 3 = Bank transfer (automatic), 4 =Credit card (automatic)         |
+| contract_type_id         | 7043 non-null: int64   |Contract the customer holds 1 = Month to month , 2 = One year contract , 3 =Two year contract     |
+| internet_service_type_id | 7043 non-null: int64   |Intenet type the customer has: 1 = DSL , 2 = Fiber Optic , 3 = No Internet               |
+| customer_id              | 7043 non-null: object  |Unique value for each customer used for identification |
+| gender                   | 7043 non-null: object  |Customer Gender: male or female|
+| senior_citizen           | 7043 non-null: int64   |Is the customer a senior citizen: 0= no 1=yes |
+| partner                  | 7043 non-null: object  |Does the customer have a partner: yes or no   |
+| dependents               | 7043 non-null: object  |Does the customer have dependents: yes or no  |
+| tenure                   | 7043 non-null: int64   |How long the customer has been with the company in months              |
+| phone_service            | 7043 non-null: object  |Does the customer have phone service:  yes or no|
+| multiple_lines           | 7043 non-null: object  |Does the customer have multiple lines:  yes or no|
+| online_security          | 7043 non-null: object  |Does the customer have online security: Yes, no, or no internet service |
+| online_backup            | 7043 non-null: object  |Does the customer have online backup: Yes, no, or no internet service|
+| device_protection        | 7043 non-null: object  |Does the customer have device protection: Yes, no, or no internet service|
+| tech_support             | 7043 non-null: object  |Does the customer have tech support: Yes, no, or no internet service|
+| streaming_tv             | 7043 non-null: object  |Does the customer have streaming tv: Yes, no, or no internet service|
+| streaming_movies         | 7043 non-null: object  |Does the customer have streaming movies: Yes, no, or no internet service|
+| paperless_billing        | 7043 non-null: object  |Does the customer have paperless billing: Yes, no, or no internet service|
+| monthly_charges          | 7043 non-null: float64 |The amount the customer is charged monthly     |
+| total_charges            | 7043 non-null: object  |The total amount the customer has been billed |
+| churn                    | 7043 non-null: object  |Has the customer left: yes or no|
+| internet_service_type    | 7043 non-null: object  |The type of internet service the customer has|
+| contract_type            | 7043 non-null: object  |The type of contract the customer has|
+| payment_type             | 7043 non-null: object  |The type of payment the customer uses              |
